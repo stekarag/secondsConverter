@@ -59,9 +59,9 @@ while (b is 0):
         b = 0
 if sec < 0:
     sec = abs(sec)
-    print("Negative number detected, using absolute value")
+    print("Negative number detected, using absolute value.")
 
-print("Calculating %i"%sec)
+print("Converting %i'' to readable form."%sec)
 
 tm = convert(sec)
 
@@ -74,5 +74,4 @@ ah = "" if tm[4] is 0 else "%i hour(s), "%tm[4]
 ami = "" if tm[5] is 0 else "%i minute(s), "%tm[5]
 ase = "" if tm[6] is 0 else "%i second(s)."%tm[6]
 answer = ay+am+aw+ad+ah+ami+ase
-
 print(answer)
