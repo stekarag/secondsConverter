@@ -62,8 +62,11 @@ while (b is 0):
     except NameError:
         print("Please enter a valid number.")
         b = 0
+if sec < 0:
+    sec = abs(sec)
+    print("Negative number detected, using absolute value")
 
-print("%i entered"%sec)
+print("Calculating %i"%sec)
 
 tm = convert(sec)
 
